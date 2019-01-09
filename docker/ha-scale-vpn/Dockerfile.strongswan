@@ -4,10 +4,9 @@ MAINTAINER mestery@mestery.com
 ARG STRONGSWAN_REPO_URL
 ARG STRONGSWAN_COMMIT
 
-RUN yum -y install epel-release socat iperf tcpdump gmp-devel gperftools-devel gperftools-libs gperftools gperf keepalived && \
-    yum -y group install "Development Tools" && \
-    yum clean all && \
-    rm -rf /var/cache/yum && \
+RUN apt-get -y install socat iperf tcpdump libgmp3-dev libgoogle-perftools-dev libgoogle-perftools4 google-perftools gperf keepalived && \
+    apt-get -y install build-essential git autoconf libtool pkg-config gettext flex bison && \
+    apt-get clean all && \
     git clone ${STRONGSWAN_REPO_URL} && \
     cd strongswan && \
     git fetch && \

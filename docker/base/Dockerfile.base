@@ -1,10 +1,12 @@
-FROM centos
-MAINTAINER mestery@mestery.com
+FROM ubuntu:bionic
+MAINTAINER giles@layerfree.net
 
 ARG REPO=release
 
-RUN curl -s https://packagecloud.io/install/repositories/fdio/${REPO}/script.rpm.sh |  bash && \
-    yum -y update && \
-    yum -y install sudo iproute vpp-18.10-release vpp-plugins-18.10-release vpp-api-python-18.10-release vpp-lib-18.10-release vpp-devel-18.10-release && \
-    yum clean all && \
-    rm -rf /var/cache/yum
+RUN apt-get -y update && \
+    apt-get -y upgrade && \
+    apt-get -y install curl && \ 
+    curl -s https://packagecloud.io/install/repositories/fdio/${REPO}/script.deb.sh |  bash && \
+    apt-get -y install sudo apt-utils iproute2 iputils-ping iptables && \
+    apt-get -y install sudo vpp vpp-plugins vpp-api-python vpp-lib vpp-dev && \
+    apt-get -y clean all
