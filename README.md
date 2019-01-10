@@ -1,10 +1,10 @@
-# vpp-container-fun
+# VPP-StrongSwan-Docker
 
 [![Build Status](https://travis-ci.org/mestery/vpp-container-fun.svg?branch=master)](https://travis-ci.org/mestery/vpp-container-fun)
 [![GitHub license](https://img.shields.io/badge/license-Apache%20license%202.0-blue.svg)](https://github.com/mestery/vpp-container-fun/blob/master/LICENSE)
 
-VPP for Docker containers
-=========================
+VPP and StrongSwan Docker containers
+====================================
 
 This repository can build you docker containers with VPP in one of two
 configurations:
