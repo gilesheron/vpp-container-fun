@@ -1,7 +1,7 @@
 StrongSwan Session Scale Testing
 ================================
 
-This directory contains Dockerfiels to build and run four containers:
+This directory contains Dockerfiles to build and run four containers:
 * Two StrongSwan IKE/ESP nodes running in active-active HA mode. These
   use keepalived for the VIP shared between the two.
 * A single vpnclient container which runs the StrongSwan client.
