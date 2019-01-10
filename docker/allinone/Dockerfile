@@ -1,5 +1,5 @@
-FROM vpp-container-fun/base
-MAINTAINER mestery@mestery.com
+FROM vpp-strongswan-docker/base
+MAINTAINER giles@layerfree.net
 
 COPY startvpp.sh /
 COPY startup1.conf /etc/vpp/startup1.conf

@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DOCKER_VPP_ALLINONE=vpp-container-fun/vpp-allinone
+DOCKER_VPP_ALLINONE=vpp-strongswan-docker/vpp-allinone
 
 .PHONY: docker-build-allinone
 docker-build-allinone: docker-build-base

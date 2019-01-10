@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DOCKER_CUPS_SERVER=vpp-container-fun/cupsserver
-DOCKER_CUPS_CLIENT=vpp-container-fun/cupsclient
-DOCKER_IPSEC_CLIENT=vpp-container-fun/ipsecclient
+DOCKER_CUPS_SERVER=vpp-strongswan-docker/cupsserver
+DOCKER_CUPS_CLIENT=vpp-strongswan-docker/cupsclient
+DOCKER_IPSEC_CLIENT=vpp-strongswan-docker/ipsecclient
 
 .PHONY: docker-build-cups-vppvpn
 docker-build-cups-vppvpn: docker-build-base docker-build-vppvpnbase

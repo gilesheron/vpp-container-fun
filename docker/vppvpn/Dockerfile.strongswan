@@ -1,5 +1,5 @@
-FROM vpp-container-fun/base
-MAINTAINER mestery@mestery.com
+FROM vpp-strongswan-docker/base
+MAINTAINER giles@layerfree.net
 
 ARG STRONGSWAN_REPO_URL
 ARG STRONGSWAN_COMMIT

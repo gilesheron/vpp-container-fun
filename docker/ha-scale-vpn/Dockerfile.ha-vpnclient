@@ -1,5 +1,5 @@
-FROM vpp-container-fun/ha-scale-strongswan
-MAINTAINER mestery@mestery.com
+FROM vpp-strongswan-docker/ha-scale-strongswan
+MAINTAINER giles@layerfree.net
 
 COPY startvpnclient.sh /
 COPY scale.sh /

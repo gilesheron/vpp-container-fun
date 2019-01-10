@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DOCKER_VPP_MULTIPLE1=vpp-container-fun/multiple-vpp1
-DOCKER_VPP_MULTIPLE2=vpp-container-fun/multiple-vpp2
+DOCKER_VPP_MULTIPLE1=vpp-strongswan-docker/multiple-vpp1
+DOCKER_VPP_MULTIPLE2=vpp-strongswan-docker/multiple-vpp2
 
 
 .PHONY: docker-build-multiple

@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DOCKER_VPP_BASE=vpp-container-fun/base
+DOCKER_VPP_BASE=vpp-strongswan-docker/base
 
 .PHONY: docker-build-base
 docker-build-base:

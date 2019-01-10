@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DOCKER_HA_STRONGSWAN=vpp-container-fun/ha-scale-strongswan
-DOCKER_HA_VPNSERVER_1=vpp-container-fun/ha-scale-vpnserver-1
-DOCKER_HA_VPNSERVER_2=vpp-container-fun/ha-scale-vpnserver-2
-DOCKER_HA_VPNCLIENT=vpp-container-fun/ha-scale-vpnclient
-DOCKER_HA_FAREND=vpp-container-fun/ha-farend
+DOCKER_HA_STRONGSWAN=vpp-strongswan-docker/ha-scale-strongswan
+DOCKER_HA_VPNSERVER_1=vpp-strongswan-docker/ha-scale-vpnserver-1
+DOCKER_HA_VPNSERVER_2=vpp-strongswan-docker/ha-scale-vpnserver-2
+DOCKER_HA_VPNCLIENT=vpp-strongswan-docker/ha-scale-vpnclient
+DOCKER_HA_FAREND=vpp-strongswan-docker/ha-farend
 
 .PHONY: docker-build-ha-scale-strongswan
 docker-build-ha-scale-strongswan: docker-build-base

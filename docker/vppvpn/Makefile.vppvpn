@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DOCKER_VPPVPNBASE=vpp-container-fun/vppvpnbase
-DOCKER_VPPVPNSERVER=vpp-container-fun/vppvpnserver
-DOCKER_VPPVPNCLIENT=vpp-container-fun/vppvpnclient
+DOCKER_VPPVPNBASE=vpp-strongswan-docker/vppvpnbase
+DOCKER_VPPVPNSERVER=vpp-strongswan-docker/vppvpnserver
+DOCKER_VPPVPNCLIENT=vpp-strongswan-docker/vppvpnclient
 
 .PHONY: docker-build-vppvpnbase
 docker-build-vppvpnbase: docker-build-base
